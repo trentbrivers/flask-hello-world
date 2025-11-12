@@ -10,6 +10,5 @@ def hello_world():
 @app.route('/db_test')
 def db_test():
     conn = psycopg2.connect("postgresql://flaskgres_user:RDS8pFdV9v2mrARfaRZPYInr4tG1Cdj6@dpg-d49ttpbipnbc7399q8q0-a/flaskgres")
-
     conn.close()
     return "Database Connection Successful"
